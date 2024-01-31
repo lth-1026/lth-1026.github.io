@@ -17,7 +17,6 @@ coverage
 /cypress/videos/
 /cypress/screenshots/
 
-package-lock.json
 jsconfig.json
 
 # Editor directories and files
