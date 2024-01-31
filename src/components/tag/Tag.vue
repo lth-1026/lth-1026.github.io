@@ -8,7 +8,7 @@ const notion = new Client({
 });
 
 async function fetchData() {
-  /*  
+  
   try {
       const notionData = await notion.databases.query({
         database_id: '42c3642bc808464a81aefd349f73a02e',
@@ -19,9 +19,9 @@ async function fetchData() {
       console.error('Error fetching Notion data:', error.message);
       throw error;
     }
-    */
+  
 
-    
+    /*
     try {
     // /api 부분이 요청 도메인인 https://api.allsilver.com/ 로 치환되므로
     // CORS를 회피할 수 있다.
@@ -34,6 +34,7 @@ async function fetchData() {
         'Content-Type': 'application/json'
       },
     })
+    
 
     if (!res.ok) {
       throw new Error(`API Call Fail: ${res}`)
@@ -46,6 +47,7 @@ async function fetchData() {
       alert('An unexpected error occurred')
     }
   }
+  */
 }
 
 

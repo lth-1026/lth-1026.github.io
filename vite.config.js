@@ -14,13 +14,13 @@ export default defineConfig({
     }
   },
   server: {
-    proxy: {
-      // 옵션과 함께: http://localhost:5173/api/bar-> http://jsonplaceholder.typicode.com/bar
-      '/api': {
-        target: 'https://api.notion.com',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '')
-      },
-    }
+    // proxy: {
+    //   // 옵션과 함께: http://localhost:5173/api/bar-> http://jsonplaceholder.typicode.com/bar
+    //   '/api': {
+    //     target: 'https://api.notion.com',
+    //     changeOrigin: true,
+    //     rewrite: (path) => path.replace(/^\/api/, '')
+    //   },
+    // }
   }
 })
